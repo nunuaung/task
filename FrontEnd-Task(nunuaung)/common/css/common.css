@@ -1,0 +1,240 @@
+:root {
+  --text-color: #2c2d2d;
+  --secondary-txtcolor: #161616;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1320px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-wrapper {
+  padding: 35px 0;
+}
+.bg-yellow {
+  background: #ffe917;
+}
+.text-center {
+  text-align: center;
+}
+.border-line {
+  border-bottom: 10px solid #f2f2f2;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+/* header */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: transparent;
+  z-index: 99;
+  transition: 0.4s ease-in-out;
+}
+.navbar.active {
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 15%);
+  transition: 0.4s ease-in-out;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1320px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.nav-col {
+  flex: 1;
+}
+.nav-center {
+  text-align: center;
+}
+.search_box {
+  position: relative;
+  max-width: 230px;
+}
+.search_box input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  padding-right: 35px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 18px;
+  transform: translateY(-50%);
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.lang-menu {
+  position: relative;
+  width: 100px;
+  padding-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+.select-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select-arrow {
+  display: inline-block;
+}
+.select-arrow .icon-arrow,
+.lang-unit {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.lang-menu .selected-lang {
+  display: flex;
+  align-items: center;
+  width: 55px;
+  color: #fff;
+  line-height: 2;
+  cursor: pointer;
+}
+.lang-menu.changed-onscroll .selected-lang,
+.lang-menu.changed-onscroll .select-arrow .icon-arrow,
+.lang-menu.changed-onscroll .lang-unit {
+  color: var(--secondary-txtcolor);
+}
+.lang-menu .selected-lang:before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  background-image: url(../image/navbar/mm-flag.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lang-menu ul {
+  display: none;
+  position: absolute;
+  top: 37px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.lang-menu ul.active {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.lang-menu ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: left;
+}
+.lang-menu ul li p {
+  width: 100%;
+  padding: 5px 10px;
+}
+.lang-menu ul li p:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.us:before {
+  background-image: url(../image/navbar/us-flag.png);
+}
+.changed-us::before {
+  background-image: url(../image/navbar/us-flag.png);
+}
+.mm::before {
+  background: url(../image/navbar/mm-flag.png);
+}
+.changed-mm::before {
+  background: url(../image/navbar/mm-flag.png);
+}
+.icon-box {
+  padding: 0 1%;
+}
+.icon-box img {
+  width: 90%;
+}
+/* banner */
+.banner .slider img {
+  min-height: 600px;
+}
+/* footer */
+footer .section-wrapper {
+  background: #df1f2d;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-col {
+  width: 33.33%;
+}
+.footer-col ul {
+  list-style-type: none;
+}
+.footer-title {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.footer-col ul li {
+  padding: 10px 0 0 0;
+}
+.footer-col ul li a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.footer-bottom {
+  padding: 20px 0;
+  background: #fff;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  line-height: 1.2;
+}

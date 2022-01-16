@@ -1,0 +1,242 @@
+.main-title,
+.section-title {
+  font-size: 1.6rem;
+  color: var(--secondary-txtcolor);
+  text-transform: uppercase;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-wrap {
+  display: flex;
+  align-items: center;
+}
+.title-wrap .title-icon {
+  max-width: 50px;
+  padding-right: 12px;
+}
+.more-button {
+  padding: 10px;
+  color: #c0c0c0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.discount .more-button {
+  color: var(--secondary-txtcolor);
+}
+.sp-banner {
+  display: none !important;
+}
+/* category */
+.col8-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col8-box,
+.categories .view-more {
+  text-align: center;
+  cursor: pointer;
+}
+.col8-box,
+.categories .view-more {
+  padding: 0 10px;
+}
+.categories .col8-box img {
+  width: 80%;
+  margin-bottom: 15px;
+}
+.brands .col8-box img {
+  width: 80%;
+}
+.category-name,
+.view-btn {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.more-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 18%;
+  background: #f4f4f4;
+  border-radius: 50%;
+}
+.circle-dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: 0 3px;
+  background: #bfbfbf;
+  border-radius: 50%;
+}
+/* product */
+.flex-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: calc(100% + 1.6%);
+  margin: -12px 0 0 -1.6%;
+}
+.flex-col {
+  width: 15.06%;
+  margin: 0 0 0 1.6%;
+}
+.single-product,
+.col8-box,
+.categories .view-more,
+.brands .view-more {
+  margin-top: 40px;
+}
+.product-img {
+  position: relative;
+}
+.product-img img {
+  border-radius: 10px;
+}
+.wishlist {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  background: #3d3d3d;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.heart-icon {
+  max-width: 23px;
+  width: 63% !important;
+}
+.product-img .price-dec {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #df1f2d;
+  border-radius: 0;
+}
+.product-img img {
+  width: 100%;
+}
+.product-content {
+  margin-top: 15px;
+  color: var(--secondary-txtcolor);
+}
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.product-price {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #df1f2d;
+}
+.normal-price {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #cecece;
+  text-decoration: line-through;
+}
+.discount .product-price {
+  color: var(--secondary-txtcolor);
+}
+.ads-slider .ads-slide img {
+  width: 100%;
+  height: auto;
+}
+.ads-slider .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.col3-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.ads-slider {
+  position: relative;
+}
+.ads-slider .slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.ads-slider .slick-track:before,
+.ads-slider .slick-track:after {
+  content: "";
+  display: table;
+}
+.ads-slider .slick-track:after {
+  clear: both;
+}
+.ads-slider .slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  height: 100%;
+  overflow: hidden;
+}
+.ads-slider .slick-slide > div {
+  margin: 0 12px;
+}
+.ads-slider [dir="rtl"] .slick-slide {
+  float: right;
+}
+.ads-slider .slick-slide img {
+  display: block;
+}
+.ads-slider .slick-slide.slick-loading img {
+  display: none;
+}
+.col3-slider .slick-arrow {
+  position: absolute;
+  top: 0;
+  width: 9%;
+  height: 99%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.col3-slider .slick-arrow.arrow-pre {
+  left: 0;
+}
+.col3-slider .slick-arrow.arrow-next {
+  right: 0;
+}
+.col3-slider .slick-arrow .icon {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 4rem;
+  transform: translate(-50%, -50%);
+}
+.col3-slider .arrow-pre .icon {
+  left: 35%;
+}
+.col3-slider .arrow-next .icon {
+  right: 20%;
+}
+/* brands */
+.brands .view-more .more-button {
+  width: 80px;
+  font-weight: bold;
+  color: #df1f2d;
+}
